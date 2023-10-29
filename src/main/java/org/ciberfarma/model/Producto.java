@@ -35,6 +35,12 @@ public class Producto {
 	
 	@Column(name="idproveedor")
 	private int idProveedor;
+	
+	@Column(name="imagen")
+	private String imagen;
+
+	
+	// metodos getter and setters
 
 	public String getCodigo() {
 		return codigo;
@@ -91,4 +97,13 @@ public class Producto {
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+	
+	public String getImagen() {
+		return imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+	
 }
